@@ -1,0 +1,27 @@
+{
+  "name": "sms-counter",
+  "version": "1.0.0",
+  "description": "SMS Counter =============================",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "jshint *.js",
+    "build": "babel --presets es2015 -d build/ index.js && uglifyjs --compress --mangle -- build/index.js > build/index.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matteogatti/sms-counter.git"
+  },
+  "author": "Matteo Gatti",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matteogatti/sms-counter/issues"
+  },
+  "homepage": "https://github.com/matteogatti/sms-counter#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "jshint": "^2.10.2",
+    "uglify-js": "^3.5.2"
+  }
+}
