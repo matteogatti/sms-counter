@@ -91,4 +91,4 @@ SmsCounter.countGsm7bitEx = text => {
   return chars.length;
 };
 
-export default SmsCounter;
+module.exports = SmsCounter;
