@@ -1,8 +1,5 @@
 'use strict';
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
 var SmsCounter = function SmsCounter() {};
 
 SmsCounter.gsm7bitChars = '@£$¥èéùìòÇ\\nØø\\rÅåΔ_ΦΓΛΩΠΨΣΘΞÆæßÉ !\\"#¤%&\'()*+,-./0123456789:;<=>?¡ABCDEFGHIJKLMNOPQRSTUVWXYZÄÖÑÜ§¿abcdefghijklmnopqrstuvwxyzäöñüà';
@@ -102,4 +99,4 @@ SmsCounter.countGsm7bitEx = function (text) {
   return chars.length;
 };
 
-exports.default = SmsCounter;
+module.exports = SmsCounter;
