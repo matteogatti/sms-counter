@@ -88,7 +88,7 @@ SmsCounter.countGsm7bitEx = text => {
     return _results;
   };
 
-  return chars.length;
+  return chars().length;
 };
 
 module.exports = SmsCounter;
